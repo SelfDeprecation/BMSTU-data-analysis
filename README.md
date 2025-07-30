@@ -1,8 +1,8 @@
 # BMSTU-data-analysis
 
 ## Table of contents:
- - [Homework I](https://github.com/SelfDeprecation/BMSTU-data-analysis/blob/main/README.md?plain=1#L7)
- - [Homework II](https://github.com/SelfDeprecation/BMSTU-data-analysis/blob/main/README.md?plain=1#L255)
+ - [Homework I](https://github.com/SelfDeprecation/BMSTU-data-analysis?tab=readme-ov-file#homework-i-description)
+ - [Homework II](https://github.com/SelfDeprecation/BMSTU-data-analysis?tab=readme-ov-file#homework-ii-description)
 
 # Homework I description
 
@@ -302,6 +302,6 @@ The following indicator to be used is Control of Corruption (CC) and its metrics
 | min_2022    | -      | -       | -         | -         | -          |
 | Russia_2022 | -      | -       | -         | -         | -          |
 
-**Note!** In the `Country` column, the row `mean_2022` must contain a hyphen `-`.
+**⚠️Note!** In the `Country` column, the row `mean_2022` must contain a hyphen `-`.
 
 10. Display a `boxplot` of the WGI index for 2022 for all countries and for each region separately (on a single graph) (`estimate`).
