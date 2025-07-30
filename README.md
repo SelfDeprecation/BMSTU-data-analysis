@@ -1,7 +1,7 @@
 # BMSTU-data-analysis
 
 ## Table of contents:
- - [Homework](https://github.com/SelfDeprecation/BMSTU-data-analysis/blob/main/README.md?plain=1#L7)
+ - [Homework I](https://github.com/SelfDeprecation/BMSTU-data-analysis/blob/main/README.md?plain=1#L7)
  - [Homework II](https://github.com/SelfDeprecation/BMSTU-data-analysis/blob/main/README.md?plain=1#L255)
 
 # Homework I description
@@ -263,8 +263,8 @@ To gain experience in solving practical data analysis tasks, such as data loadin
 The following indicator to be used is Control of Corruption (CC) and its metrics `rank` and `estimate`.
 
 - Datasets:
-    - [WGI](data/wgidataset.xlsx)
-    - [Regions](data/regions.xlsx)
+    - [WGI](Homework%20II/data/wgidataset.xlsx)
+    - [Regions](Homework%20II/data/regions.xlsx)
 - [WGI Documentaton](http://info.worldbank.org/governance/wgi/)
 
 ## Stages of work:
@@ -273,13 +273,13 @@ The following indicator to be used is Control of Corruption (CC) and its metrics
 
 2. Display WGI index data for 2022 as a horizontal bar chart (`rank`). An approximate example of the graph is shown below.
 
-![](img/cpi_2016_.png)
+![](Homework%20II/img/cpi_2016_.png)
 
 3. Create a DataFrame from the original data for the Europe and Central Asia region and save it to `DF_REGION`
 
 4. Plot the WGI index for 1996-2022 for countries in the region Europe and Central Asia (`estimate`). An approximate example of the graph is shown below.
 
-  ![](img/fig_springfield_region.png)
+  ![](Homework%20II/img/fig_springfield_region.png)
 
 5. Find countries with the highest and lowest WGI values in the Europe and Central Asia region for 2022 (`estimate`). Save these countries into a single DataFrame `DF_MINMAX` with corresponding labels.
 
@@ -289,7 +289,7 @@ The following indicator to be used is Control of Corruption (CC) and its metrics
 
 7. Plot the WGI index from 1996 to 2022 for countries in the Europe and Central Asia region, highlight countries with the highest and lowest WGI values in 2022, and display the regional average along with Russia's values. An approximate example of the graph is shown below.
 
-![](img/fig_springfield_region_comb.png)
+![](Homework%20II/img/fig_springfield_region_comb.png)
 
 8. Calculate the change in the `rank` indicator value ($2022 - 1996$).
 
