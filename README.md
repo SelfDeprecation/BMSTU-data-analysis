@@ -1,5 +1,9 @@
 # BMSTU-data-analysis
 
+## Table of contents:
+ - [Homework](https://github.com/SelfDeprecation/BMSTU-data-analysis/blob/main/README.md?plain=1#L7)
+ - [Homework II](https://github.com/SelfDeprecation/BMSTU-data-analysis/blob/main/README.md?plain=1#L255)
+
 # Homework I description
 
 ## Text Analysis Tool
@@ -246,3 +250,58 @@ Analyze the text assigned to you according to your variant. Use the developed to
 - Determine the key information in the text
 
 Present your analysis results and draw conclusions about the content of the text.
+
+
+# Homework II description
+
+## Descriptive data analysis: Analysis of Worldwide Governance Indicators (WGI)
+
+## Objective of the work:
+
+To gain experience in solving practical data analysis tasks, such as data loading, transformation, calculation of basic statistics, and data visualization through graphs and charts, using the Python programming language.
+
+The following indicator to be used is Control of Corruption (CC) and its metrics `rank` and `estimate`.
+
+- Datasets:
+    - [WGI](data/wgidataset.xlsx)
+    - [Regions](data/regions.xlsx)
+- [WGI Documentaton](http://info.worldbank.org/governance/wgi/)
+
+## Stages of work:
+
+1. Load data into a DataFrame and save it to `DF_WGI`. Then sort the data in descending order of the DataFrame index and save it to `DF_SORTED`.
+
+2. Display WGI index data for 2022 as a horizontal bar chart (`rank`). An approximate example of the graph is shown below.
+
+![](img/cpi_2016_.png)
+
+3. Create a DataFrame from the original data for the Europe and Central Asia region and save it to `DF_REGION`
+
+4. Plot the WGI index for 1996-2022 for countries in the region Europe and Central Asia (`estimate`). An approximate example of the graph is shown below.
+
+  ![](img/fig_springfield_region.png)
+
+5. Find countries with the highest and lowest WGI values in the Europe and Central Asia region for 2022 (`estimate`). Save these countries into a single DataFrame `DF_MINMAX` with corresponding labels.
+
+    ⚠️ **Note.** Several countries may share the same ranking position due to identical index values.
+
+6. Calculate the region's average values for each year from 1996 to 2022 (`estimate`) and store them in a Series `S_MEANS` containing only the mean values for each year.
+
+7. Plot the WGI index from 1996 to 2022 for countries in the Europe and Central Asia region, highlight countries with the highest and lowest WGI values in 2022, and display the regional average along with Russia's values. An approximate example of the graph is shown below.
+
+![](img/fig_springfield_region_comb.png)
+
+8. Calculate the change in the `rank` indicator value ($2022 - 1996$).
+
+9. Display a table for the Europe and Central Asia region (WGI - `rank`) and save it to the `RES_TABLE`.
+
+|             | Region | Country | Rank 1996 | Rank 2022 | Difference |
+| ----------- | ------ | ------- | --------- | --------- | ---------- |
+| mean_2022   | -      | -       | -         | -         | -          |
+| max_2022    | -      | -       | -         | -         | -          |
+| min_2022    | -      | -       | -         | -         | -          |
+| Russia_2022 | -      | -       | -         | -         | -          |
+
+**Note!** In the `Country` column, the row `mean_2022` must contain a hyphen `-`.
+
+10. Display a `boxplot` of the WGI index for 2022 for all countries and for each region separately (on a single graph) (`estimate`).
