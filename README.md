@@ -305,3 +305,48 @@ The following indicator to be used is Control of Corruption (CC) and its metrics
 **⚠️Note!** In the `Country` column, the row `mean_2022` must contain a hyphen `-`.
 
 10. Display a `boxplot` of the WGI index for 2022 for all countries and for each region separately (on a single graph) (`estimate`).
+
+
+# Homework III description
+
+## Descriptive data analysis: Stock market analysis
+
+## Objective of the work:
+
+To gain experience in solving practical data analysis tasks, such as data loading, transformation, calculation of basic statistics, and data visualization through graphs and charts, using the Python programming language.
+
+The datasets were loaded from the website https://finance.yahoo.com/
+
+**⚠️Note!** Only the closing price is needed.
+
+## Stages of work:
+
+1. Load the data into a single dataframe from all files in the /data/stock folder. All files have the same structure, including column names. Use the "Date" column values as the dataframe index. The column names should match the stock names (filename without .csv), with their values taken from the "Close" column in the .csv files. Save the DataFrame to `DF_COMPANIES`.
+
+2. Calculate the correlation matrix for all stocks and save it to `DF_CORR`.
+
+3. Display the correlation matrix as a diagram. An approximate example of the graph is shown below.
+
+  ![](Homework%20III/img/fig_corr_matrix.png)
+
+4. For the company `GOOGL`, determine:
+
+    - The stock with the maximum positive correlation (max)
+    - The stock with the maximum negative correlation (min)
+    - The stock with the minimum correlation (closest to no correlation/none)
+
+  Save the results in the list `LST_COMP_CORR` in the specified order.
+
+5. Create scatter plots for:
+
+    - `GOOGL` vs. Min company
+    - `GOOGL` vs. Max company
+    - `GOOGL` vs. None company
+    
+  Plot GOOGL's price on the `x-axis` and the paired company's price on the `y-axis`.
+
+6. Calculate the average stock price for each month (the original data is sampled monthly) and save the result to `S_MEANS_COMP`.
+
+7. Plot graphs for the stocks from stage 4 and the average from stage 6. An approximate example of the graph is shown below.
+
+  ![](Homework%20III/img/fig_tw_comp.png)
