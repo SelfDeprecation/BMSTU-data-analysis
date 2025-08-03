@@ -3,6 +3,7 @@
 ## Table of contents:
  - [Homework I](https://github.com/SelfDeprecation/BMSTU-data-analysis?tab=readme-ov-file#homework-i-description)
  - [Homework II](https://github.com/SelfDeprecation/BMSTU-data-analysis?tab=readme-ov-file#homework-ii-description)
+ - [Homework III](https://github.com/SelfDeprecation/BMSTU-data-analysis?tab=readme-ov-file#homework-iii-description)
 
 # Homework I description
 
